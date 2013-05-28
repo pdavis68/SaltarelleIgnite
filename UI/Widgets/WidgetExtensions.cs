@@ -67,7 +67,7 @@ namespace Ignite.UI.Widgets
         {
             return null;
         }
-        /*
+
         [InstanceMethodOnFirstArgument, ScriptName("igDialog")]
         public static IGDialogObject IGDialog(this jQueryObject q)
         {
@@ -79,6 +79,29 @@ namespace Ignite.UI.Widgets
         {
             return null;
         }
-        */
+
+        [InstanceMethodOnFirstArgument, ScriptName("igTree")]
+        public static IGTreeObject IGTree(this jQueryObject q)
+        {
+            return null;
+        }
+
+        [InstanceMethodOnFirstArgument, ScriptName("igTree")]
+        public static IGTreeObject IGTree(this jQueryObject q, IGTreeOptions options)
+        {
+            return null;
+        }
+
+        [InstanceMethodOnFirstArgument, ScriptName("ig.loader")]
+        public static IGLoaderObject IGLoader(this jQueryObject q)
+        {
+            return null;
+        }
+
+        [InstanceMethodOnFirstArgument, ScriptName("ig.loader")]
+        public static IGLoaderObject IGLoader(this jQueryObject q, IGLoaderOptions options)
+        {
+            return null;
+        }
     }
 }

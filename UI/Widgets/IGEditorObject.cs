@@ -13,16 +13,30 @@
    See the License for the specific language governing permissions and
    limitations under the License.
 */
-
-using jQueryApi;
-
+using System;
+using System.Collections.Generic;
 using System.Runtime.CompilerServices;
+using System.Text;
 
 namespace Ignite.UI.Widgets
 {
     [IgnoreNamespace, Imported]
-    public class IGLoadingIndicatorObject : jQueryObject
+    public class IGEditorObject
     {
+        #region Events
+
+        public event jQueryUICancelableEventHandler<IGKeyPress> Keypress
+        {
+            [InlineCode("{this}.bind('igeditorkeypress', {value})")]
+            add
+            {
+            }
+            [InlineCode("{this}.unbind('igeditorkeypress', {value})")]
+            remove
+            {
+            }
+        }
+        #endregion
 
     }
 }

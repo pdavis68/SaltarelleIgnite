@@ -167,6 +167,9 @@ namespace Ignite.UI.Widgets
 
 
     }
+
+
+ 
     [IgnoreNamespace, Imported]
     [Serializable]
     public class IGComboActiveItemEvent

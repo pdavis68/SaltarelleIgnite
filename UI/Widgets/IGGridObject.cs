@@ -22,19 +22,9 @@ using jQueryApi.UI;
 
 namespace Ignite.UI.Widgets
 {
-    public class IGGridObject
+    [IgnoreNamespace, Imported]
+    public class IGGridObject : jQueryObject
     {
-        [ScriptSkip]
-        public static explicit operator jQueryObject(IGGridObject o)
-        {
-            return null;
-        }
-        [ScriptSkip]
-        public static explicit operator IGGridObject(jQueryObject o)
-        {
-            return null;
-        }
-
         [InlineCode("{this}.igGrid('dataBind')")]
         public void DataBind()
         {
@@ -57,6 +47,12 @@ namespace Ignite.UI.Widgets
         {
             return 0;
         }
+
+        [InlineCode("{this}.igGrid('destroy')")]
+        public void Destroy()
+        {
+        }
+
 
 
         #region Events
@@ -132,6 +128,55 @@ namespace Ignite.UI.Widgets
             {
             }
         }
+
+        public event jQueryUIEventHandler<IGEditCellStartEvent> EditCellStarted
+        {
+            [InlineCode("{this}.bind('iggridupdatingeditcellstarted', {value})")]
+            add
+            {
+            }
+            [InlineCode("{this}.unbind('iggridupdatingeditcellstarted', {value})")]
+            remove
+            {
+            }
+        }
+
+        public event jQueryUICancelableEventHandler<IGEditCellStartEvent> EditCellStarting
+        {
+            [InlineCode("{this}.bind('iggridupdatingeditcellstarting', {value})")]
+            add
+            {
+            }
+            [InlineCode("{this}.unbind('iggridupdatingeditcellstarting', {value})")]
+            remove
+            {
+            }
+        }
+
+        public event jQueryUIEventHandler<IGEditCellEndEvent> EditCellEnded
+        {
+            [InlineCode("{this}.bind('iggridupdatingeditcellended', {value})")]
+            add
+            {
+            }
+            [InlineCode("{this}.unbind('iggridupdatingeditcellended', {value})")]
+            remove
+            {
+            }
+        }
+
+        public event jQueryUICancelableEventHandler<IGEditCellEndEvent> EditCellEnding
+        {
+            [InlineCode("{this}.bind('iggridupdatingeditcellending', {value})")]
+            add
+            {
+            }
+            [InlineCode("{this}.unbind('iggridupdatingeditcellending', {value})")]
+            remove
+            {
+            }
+        }
+
 
         #endregion
 

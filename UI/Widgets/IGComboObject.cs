@@ -22,19 +22,10 @@ using jQueryApi.UI;
 
 namespace Ignite.UI.Widgets
 {
-    public class IGComboObject
+    [IgnoreNamespace, Imported]
+    public class IGComboObject : jQueryObject
     {
 
-        [ScriptSkip]
-        public static explicit operator jQueryObject(IGComboObject o)
-        {
-            return null;
-        }
-        [ScriptSkip]
-        public static explicit operator IGComboObject(jQueryObject o)
-        {
-            return null;
-        }
         #region Methods
         public int ActiveIndex
         {
@@ -52,7 +43,7 @@ namespace Ignite.UI.Widgets
             set;
         }
 
-        public string Text
+        public new string Text
         {
             [InlineCode("{this}.igCombo('text')")]
             get;
@@ -60,7 +51,7 @@ namespace Ignite.UI.Widgets
             set;
         }
 
-        public object Value
+        public new object Value
         {
             [InlineCode("{this}.igCombo('value')")]
             get;
@@ -77,7 +68,7 @@ namespace Ignite.UI.Widgets
         }
 
         [InlineCode("{this}.igCombo('activeIndex', {index}, {fire})")]
-        public void setActiveIndex(int index, bool fire)
+        public void SetActiveIndex(int index, bool fire)
         {
 
         }
@@ -155,7 +146,7 @@ namespace Ignite.UI.Widgets
         }
 
         [InlineCode("{this}.igCombo('remove')")]
-        public void Remove()
+        public new void Remove()
         {
         }
 

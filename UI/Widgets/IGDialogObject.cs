@@ -1,26 +1,29 @@
-﻿using jQueryApi;
+﻿/*
+  Copyright 2012-2013 George's, Inc
+
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+*/
+
+using jQueryApi;
 using jQueryApi.UI;
-using System;
-using System.Collections.Generic;
 using System.Html;
 using System.Runtime.CompilerServices;
-using System.Text;
 
 namespace Ignite.UI.Widgets
 {
-    public class IGDialogObject
-    {
-        [ScriptSkip]
-        public static explicit operator jQueryObject(IGDialogObject o)
-        {
-            return null;
-        }
-        [ScriptSkip]
-        public static explicit operator IGDialogObject(jQueryObject o)
-        {
-            return null;
-        }
-
+    [IgnoreNamespace, Imported]
+    public class IGDialogObject : jQueryObject
+    {    
         #region Events
         public event jQueryUIEventHandler<IGDialogAnimationEnded> AnimationEnded
         {
@@ -29,30 +32,6 @@ namespace Ignite.UI.Widgets
             {
             }
             [InlineCode("{this}.unbind('animationEnded', {value})")]
-            remove
-            {
-            }
-        }
-
-        public event jQueryUIEventHandler<IGDialogBlur> Blur
-        {
-            [InlineCode("{this}.bind('blur', {value})")]
-            add
-            {
-            }
-            [InlineCode("{this}.unbind('blur', {value})")]
-            remove
-            {
-            }
-        }
-
-        public event jQueryUIEventHandler<IGDialogFocus> Focus
-        {
-            [InlineCode("{this}.bind('focus', {value})")]
-            add
-            {
-            }
-            [InlineCode("{this}.unbind('focus', {value})")]
             remove
             {
             }

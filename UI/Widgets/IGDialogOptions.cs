@@ -14,12 +14,11 @@
    limitations under the License.
 */
 
+using jQueryApi;
+using jQueryApi.UI;
 using System;
 using System.Html;
 using System.Runtime.CompilerServices;
-
-using jQueryApi;
-using jQueryApi.UI;
 
 namespace Ignite.UI.Widgets
 {
@@ -35,8 +34,6 @@ namespace Ignite.UI.Widgets
         public bool CloseOnEscape { get; set; }
 
         public object Container { get; set; }
-
-        public string DialogClass { get; set; }
 
         public bool Draggable { get; set; }
 
@@ -94,7 +91,7 @@ namespace Ignite.UI.Widgets
 
         public bool ShowPinButton { get; set; }
 
-        public Enum State { get; set; }
+        public string State { get; set; }
 
         public int TabIndex { get; set; }
 
@@ -116,6 +113,29 @@ namespace Ignite.UI.Widgets
         public jQueryUIEventHandler<IGDialogStateChanged> StateChanged;
         public jQueryUIEventHandler<IGDialogStateChanging> StateChanging;
         #endregion Events
+    }
+
+    [IgnoreNamespace, Imported]
+    public sealed class IGDialogState 
+    {
+        private readonly String name;
+        private readonly int value;
+
+        public static readonly IGDialogState Opened = new IGDialogState(1, "opened");
+        public static readonly IGDialogState Minimized = new IGDialogState(2, "minimized");
+        public static readonly IGDialogState Maximized = new IGDialogState(3, "maximized");
+        public static readonly IGDialogState Closed = new IGDialogState(3, "closed");
+
+        private IGDialogState(int value, String name)
+        {
+            this.name = name;
+            this.value = value;
+        }
+
+        public override String ToString()
+        {
+            return name;
+        }
     }
     [IgnoreNamespace, Imported]
     [Serializable]

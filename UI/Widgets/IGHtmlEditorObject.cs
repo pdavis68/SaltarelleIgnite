@@ -22,6 +22,7 @@ using jQueryApi.UI;
 
 namespace Ignite.UI.Widgets
 {
+    [IgnoreNamespace, Imported]
     public class IGHtmlEditorObject
     {
         [ScriptSkip]

@@ -531,4 +531,91 @@ namespace Ignite.UI.Widgets
         /// </summary>
         public string FirstSortDirection { get; set; }
     }
+
+    [IgnoreNamespace, Imported]
+    [Serializable]
+    public class IGGridUpdatingFeature : IGGridFeatureBase
+    {
+        public string AddRowLabel { get; set; }
+
+        public string AddRowTooltip { get; set; }
+
+        public string CancelLabel { get; set; }
+
+        public string CancelTooltip { get; set; }
+
+        public IGGridUpdatingColumnSettings[] ColumnSettings { get; set; }
+
+        public string DeleteLabel { get; set; }
+
+        public string DeleteTooltip { get; set; }
+
+        public string DoneLabel { get; set; }
+
+        public string DoneTooltip { get; set; }
+
+        public string EditMode { get; set; }
+
+        public bool EnableAddRow { get; set; }
+
+        public bool EnableDataDirtyException { get; set; }
+
+        public bool EnableDeleteRow { get; set; }
+
+        public bool ShowDoneCancelButtons { get; set; }
+
+        public string StartEditTriggers { get; set; }
+
+        public bool Validation { get; set; }
+    }
+
+    [IgnoreNamespace, Imported]
+    [Serializable]
+    public class IGGridUpdatingColumnSettings
+    {
+        public string ColumnKey { get; set; }
+
+        public object DefaultValue { get; set; }
+
+        public object EditorOptions { get; set; }
+
+        public object EditorProvider { get; set; }
+
+        public TypeOption<string, int> EditorType { get; set; }
+
+        public bool ReadOnly { get; set; }
+
+        public bool Required { get; set; }
+
+        public bool Validation { get; set; }
+
+    }
+
+    [IgnoreNamespace, Imported]
+    [Serializable]
+    public class IGEditCellStartEvent
+    {
+        public IGGridUpdating Owner;
+        public int RowID;
+        public int ColumnIndex;
+        public string ColumnKey;
+        public IGEditorObject Editor;
+        public object Value;
+        public bool RowAdding;
+    }
+
+    [IgnoreNamespace, Imported]
+    [Serializable]
+    public class IGEditCellEndEvent : IGEditCellStartEvent
+    {
+        public object OldValue;
+        public bool Update;
+    }
+
+    [IgnoreNamespace, Imported]
+    [Serializable]
+    public class IGGridUpdating
+    {
+        public IGGridObject Grid;
+    }
 }
