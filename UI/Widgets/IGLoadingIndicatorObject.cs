@@ -21,6 +21,7 @@ using System.Runtime.CompilerServices;
 namespace Ignite.UI.Widgets
 {
     [IgnoreNamespace, Imported]
+
     public class IGLoadingIndicatorObject : jQueryObject
     {
 

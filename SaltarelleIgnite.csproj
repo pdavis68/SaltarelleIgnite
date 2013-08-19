@@ -33,12 +33,27 @@
   <ItemGroup>
     <Compile Include="UI\Widgets\IGComboObject.cs" />
     <Compile Include="UI\Widgets\IGComboOptions.cs" />
+    <Compile Include="UI\Widgets\IGDataSource.cs" />
+    <Compile Include="UI\Widgets\IGDateEditorObject.cs" />
+    <Compile Include="UI\Widgets\IGDatePickerObject.cs" />
+    <Compile Include="UI\Widgets\IGDatePickerOptions.cs" />
+    <Compile Include="UI\Widgets\IGDialogObject.cs" />
     <Compile Include="UI\Widgets\IGDialogOptions.cs" />
+    <Compile Include="UI\Widgets\IGEditorObject.cs" />
+    <Compile Include="UI\Widgets\IGEditorOptions.cs" />
     <Compile Include="UI\Widgets\IGGridObject.cs" />
     <Compile Include="UI\Widgets\IGGridOptions.cs" />
     <Compile Include="UI\Widgets\IGHtmlEditorObject.cs" />
     <Compile Include="UI\Widgets\IGHtmlEditorOptions.cs" />
+    <Compile Include="UI\Widgets\IGLoaderObject.cs" />
+    <Compile Include="UI\Widgets\IGLoaderOptions.cs" />
     <Compile Include="UI\Widgets\IGLoadingIndicatorObject.cs" />
+    <Compile Include="UI\Widgets\IGMaskEditorObject.cs" />
+    <Compile Include="UI\Widgets\IGNumericEditorObject.cs" />
+    <Compile Include="UI\Widgets\IGPercentEditorObject.cs" />
+    <Compile Include="UI\Widgets\IGTextEditorObject.cs" />
+    <Compile Include="UI\Widgets\IGTreeObject.cs" />
+    <Compile Include="UI\Widgets\IGTreeOptions.cs" />
     <Compile Include="UI\Widgets\IGValidatorOptions.cs" />
     <Compile Include="UI\Widgets\WidgetExtensions.cs" />
   </ItemGroup>

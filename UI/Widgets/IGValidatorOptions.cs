@@ -14,6 +14,7 @@
    limitations under the License.
 */
 
+using jQueryApi.UI;
 using System;
 using System.Html;
 using System.Runtime.CompilerServices;
@@ -24,55 +25,60 @@ namespace Ignite.UI.Widgets
     [Serializable]
     public class IGValidatorOptions
     {
+        public string Alignment;
+        public int AnimationHide;
+        public int AnimationShow;
+        public bool BodyAsParent;
+        public bool CheckboxesName;
+        public Element Element;
+        public bool EnableTargetErrorCss;
+        public Element ErrorLabel;
+        public string ErrorMessage;
+        public bool FormSubmit;
+        public TypeOption<string, int> KeepFocus;
+        public object Locale;
+        public int Max;
+        public int MaxLength;
+        public int Min;
+        public int MinLength;
+        public bool Onblur;
+        public bool Onchange;
+        public bool Onsubmit;
+        public TypeOption<string, int, object> RegExp;
+        public bool Required;
+        public bool ShowIcon;
+        public string Theme;
 
-        public string Alignment { get; set; }
+        #region Events
+        public jQueryUICancelableEventHandler<IGValidatorCheckValue> CheckValue;
+        public jQueryUIEventHandler<IGValidatorError> ErrorHidden;
+        public jQueryUICancelableEventHandler<IGValidatorError> ErrorHiding;
+        public jQueryUICancelableEventHandler<IGValidatorError> ErrorShowing;
+        public jQueryUIEventHandler<IGValidatorError> ErrorShown;
+        public jQueryUICancelableEventHandler<IGValidatorValidation> Validation;
+        #endregion Events
+    }
 
-        public int AnimationHide { get; set; }
+    [IgnoreNamespace, Imported]
+    [Serializable]
+    public class IGValidatorCheckValue
+    {
+        public string Message { get; set; }
+        public object Value { get; set; }
+    }
 
-        public int AnimationShow { get; set; }
+    [IgnoreNamespace, Imported]
+    [Serializable]
+    public class IGValidatorError
+    {
+        public string Message { get; set; }
+    }
 
-        public bool BodyAsParent { get; set; }
-
-        public bool CheckboxesName { get; set; }
-
-        public Element Element { get; set; }
-
-        public bool EnableTargetErrorCss { get; set; }
-
-        public Element ErrorLabel { get; set; }
-
-        public string ErrorMessage { get; set; }
-
-        public bool FormSubmit { get; set; }
-
-        public TypeOption<string, int> KeepFocus { get; set; }
-
-        public object Locale { get; set; }
-
-        public int Max { get; set; }
-
-        public int MaxLength { get; set; }
-
-        public int Min { get; set; }
-
-        public int MinLength { get; set; }
-
-        public bool OnBlur { get; set; }
-
-        public bool OnChange { get; set; }
-
-        public bool OnSubmit { get; set; }
-
-        /// <summary>
-        /// Infragistics site says "Enumeration" but provides a string example.
-        /// </summary>
-        public string RegExp { get; set; }
-
-        public bool Required { get; set; }
-
-        public bool ShowIcon { get; set; }
-
-        public string Theme { get; set; }
-
+    [IgnoreNamespace, Imported]
+    [Serializable]
+    public class IGValidatorValidation
+    {
+        public string Message { get; set; }
+        public bool Invalid { get; set; }
     }
 }

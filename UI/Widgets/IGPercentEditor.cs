@@ -23,317 +23,317 @@ using System.Runtime.CompilerServices;
 namespace Ignite.UI.Widgets
 {
     [IgnoreNamespace, Imported]
-    public class IGEditorObject : jQueryObject
+    public class IGPercentEditorObject
     {
         public Element Element;
         #region Methods
-        [InlineCode("{this}.igEditor('addListItem', {item})")]
+        [InlineCode("{this}.igPercentEditor('addListItem', {item})")]
         public object AddListItem(object item)
         {
             return null;
         }
 
-        [InlineCode("{this}.igEditor('addListItem', {item}, {index})")]
+        [InlineCode("{this}.igPercentEditor('addListItem', {item}, {index})")]
         public object AddListItem(object item, int index)
         {
             return null;
         }
-        
-        [InlineCode("{this}.igEditor('addListItems', {item})")]
+
+        [InlineCode("{this}.igPercentEditor('addListItems', {item})")]
         public object AddListItems(object item)
         {
             return null;
         }
 
-        [InlineCode("{this}.igEditor('addListItems', {item}, {index})")]
+        [InlineCode("{this}.igPercentEditor('addListItems', {item}, {index})")]
         public object AddListItems(object item, int index)
         {
             return null;
         }
-        
-        [InlineCode("{this}.igEditor('clearListItems')")]
+
+        [InlineCode("{this}.igPercentEditor('clearListItems')")]
         public object ClearListItems()
         {
             return null;
         }
-        
-        [InlineCode("{this}.igEditor('destroy')")]
+
+        [InlineCode("{this}.igPercentEditor('destroy')")]
         public object Destroy()
         {
             return null;
         }
-        
-        [InlineCode("{this}.igEditor('dropDownElement')")]
+
+        [InlineCode("{this}.igPercentEditor('dropDownElement')")]
         public object DropDownElement()
         {
             return null;
         }
-        
-        [InlineCode("{this}.igEditor('dropDownVisible')")]
+
+        [InlineCode("{this}.igPercentEditor('dropDownVisible')")]
         public bool DropDownVisible()
         {
             return false;
         }
 
-        [InlineCode("{this}.igEditor('dropDownVisible', {showHide})")]
+        [InlineCode("{this}.igPercentEditor('dropDownVisible', {showHide})")]
         public object DropDownVisible(bool showHide)
         {
             return null;
         }
-        
-        [InlineCode("{this}.igEditor('field')")]
+
+        [InlineCode("{this}.igPercentEditor('field')")]
         public jQueryObject Field()
         {
             return null;
         }
-        
-        [InlineCode("{this}.igEditor('findListItemIndex', {text})")]
+
+        [InlineCode("{this}.igPercentEditor('findListItemIndex', {text})")]
         public int FindListItemIndex(string text)
         {
             return 0;
         }
-        
-        [InlineCode("{this}.igEditor('findListItemIndex', {text}, {paramOne})")]
+
+        [InlineCode("{this}.igPercentEditor('findListItemIndex', {text}, {paramOne})")]
         public int FindListItemIndex(string text, bool paramOne)
         {
             return 0;
         }
-        
-        [InlineCode("{this}.igEditor('findListItemIndex', {text}, {paramOne}, {paramTwo})")]
+
+        [InlineCode("{this}.igPercentEditor('findListItemIndex', {text}, {paramOne}, {paramTwo})")]
         public int FindListItemIndex(string text, bool paramOne, bool paramTwo)
         {
             return 0;
         }
-        
-        [InlineCode("{this}.igEditor('findListItemIndex', {text}, {paramOne}, {paramTwo}, {paramThree})")]
+
+        [InlineCode("{this}.igPercentEditor('findListItemIndex', {text}, {paramOne}, {paramTwo}, {paramThree})")]
         public int FindListItemIndex(string text, bool paramOne, bool paramTwo, bool paramThree)
         {
             return 0;
         }
-        
-        [InlineCode("{this}.igEditor('getRegionalOption', {name})")]
+
+        [InlineCode("{this}.igPercentEditor('getRegionalOption', {name})")]
         public string GetRegionalOption(string name)
         {
             return null;
         }
-        
-        [InlineCode("{this}.igEditor('getSelectedListItem')")]
+
+        [InlineCode("{this}.igPercentEditor('getSelectedListItem')")]
         public TypeOption<string, int, DateTime, object> GetSelectedListItem()
         {
             return null;
         }
-        
-        [InlineCode("{this}.igEditor('getSelectedText')")]
+
+        [InlineCode("{this}.igPercentEditor('getSelectedText')")]
         public string GetSelectedText()
         {
             return null;
         }
-        
-        [InlineCode("{this}.igEditor('getSelection')")]
+
+        [InlineCode("{this}.igPercentEditor('getSelection')")]
         public int GetSelection()
         {
             return 0;
         }
 
-        [InlineCode("{this}.igEditor('getSelection', {start})")]
+        [InlineCode("{this}.igPercentEditor('getSelection', {start})")]
         public int GetSelection(bool start)
         {
             return 0;
         }
-        
-        [InlineCode("{this}.igEditor('getValueByMode', {mode})")]
+
+        [InlineCode("{this}.igPercentEditor('getValueByMode', {mode})")]
         public TypeOption<string, int, DateTime, object> GetValueByMode(string mode)
         {
             return null;
         }
 
-        [InlineCode("{this}.igEditor('getValueByMode', {mode}, {v})")]
+        [InlineCode("{this}.igPercentEditor('getValueByMode', {mode}, {v})")]
         public TypeOption<string, int, DateTime, object> GetValueByMode(string mode, object v)
         {
             return null;
         }
 
-        [InlineCode("{this}.igEditor('getValueByMode', {mode}, {v}, getVal)")]
+        [InlineCode("{this}.igPercentEditor('getValueByMode', {mode}, {v}, getVal)")]
         public TypeOption<string, int, DateTime, object> GetValueByMode(string mode, object v, object getVal)
         {
             return null;
         }
-        
-        [InlineCode("{this}.igEditor('hasFocus')")]
+
+        [InlineCode("{this}.igPercentEditor('hasFocus')")]
         public bool HasFocus()
         {
             return false;
         }
-        
-        [InlineCode("{this}.igEditor('hasInvalidMessage')")]
+
+        [InlineCode("{this}.igPercentEditor('hasInvalidMessage')")]
         public bool HasInvalidMessage()
         {
             return false;
         }
-        
-        [InlineCode("{this}.igEditor('hide')")]
-        public new object Hide()
+
+        [InlineCode("{this}.igPercentEditor('hide')")]
+        public object Hide()
         {
             return null;
         }
-        
-        [InlineCode("{this}.igEditor('isValid')")]
+
+        [InlineCode("{this}.igPercentEditor('isValid')")]
         public bool IsValid()
         {
             return false;
         }
-        
-        [InlineCode("{this}.igEditor('mainElement')")]
+
+        [InlineCode("{this}.igPercentEditor('mainElement')")]
         public jQueryObject MainElement()
         {
             return null;
         }
-        
-        [InlineCode("{this}.igEditor('paste', {txt})")]
+
+        [InlineCode("{this}.igPercentEditor('paste', {txt})")]
         public object Paste(string txt)
         {
             return null;
         }
 
-        [InlineCode("{this}.igEditor('paste', {txt}, {flag})")]
+        [InlineCode("{this}.igPercentEditor('paste', {txt}, {flag})")]
         public object Paste(string txt, bool flag)
         {
             return null;
         }
-        
-        [InlineCode("{this}.igEditor('remove')")]
-        public new object Remove()
+
+        [InlineCode("{this}.igPercentEditor('remove')")]
+        public object Remove()
         {
             return null;
         }
-        
-        [InlineCode("{this}.igEditor('removeListItem', {item})")]
+
+        [InlineCode("{this}.igPercentEditor('removeListItem', {item})")]
         public object RemoveListItem(object item)
         {
             return null;
         }
-        
-        [InlineCode("{this}.igEditor('removeListItemAt', {index})")]
+
+        [InlineCode("{this}.igPercentEditor('removeListItemAt', {index})")]
         public object RemoveListItemAt(int index)
         {
             return null;
         }
-        
-        [InlineCode("{this}.igEditor('select')")]
-        public new object Select()
+
+        [InlineCode("{this}.igPercentEditor('select')")]
+        public object Select()
         {
             return null;
         }
-        
-        [InlineCode("{this}.igEditor('select', {sel0})")]
+
+        [InlineCode("{this}.igPercentEditor('select', {sel0})")]
         public object Select(int sel0)
         {
             return null;
         }
-        
-        [InlineCode("{this}.igEditor('select', {sel0}, {val})")]
+
+        [InlineCode("{this}.igPercentEditor('select', {sel0}, {val})")]
         public object Select(int sel0, string val)
         {
             return null;
         }
-        
-        [InlineCode("{this}.igEditor('select', {sel0}, {sel1})")]
+
+        [InlineCode("{this}.igPercentEditor('select', {sel0}, {sel1})")]
         public object Select(int sel0, int sel1)
         {
             return null;
         }
-        
-        [InlineCode("{this}.igEditor('select', {sel0}, {sel1}, {val})")]
+
+        [InlineCode("{this}.igPercentEditor('select', {sel0}, {sel1}, {val})")]
         public object Select(int sel0, int sel1, string val)
         {
             return null;
         }
-        
-        [InlineCode("{this}.igEditor('selectedListIndex')")]
+
+        [InlineCode("{this}.igPercentEditor('selectedListIndex')")]
         public int SelectedListIndex()
         {
             return 0;
         }
 
-        [InlineCode("{this}.igEditor('selectedListIndex', {index})")]
+        [InlineCode("{this}.igPercentEditor('selectedListIndex', {index})")]
         public int SelectedListIndex(int index)
         {
             return 0;
         }
-        
-        [InlineCode("{this}.igEditor('setFocus')")]
+
+        [InlineCode("{this}.igPercentEditor('setFocus')")]
         public object SetFocus()
         {
             return null;
         }
 
-        [InlineCode("{this}.igEditor('setFocus', {delay})")]
+        [InlineCode("{this}.igPercentEditor('setFocus', {delay})")]
         public object SetFocus(int delay)
         {
             return null;
         }
-        
-        [InlineCode("{this}.igEditor('show')")]
-        public new object Show()
+
+        [InlineCode("{this}.igPercentEditor('show')")]
+        public object Show()
         {
             return null;
         }
-        
-        [InlineCode("{this}.igEditor('spin', {delta})")]
+
+        [InlineCode("{this}.igPercentEditor('spin', {delta})")]
         public object Spin(int delta)
         {
             return null;
         }
-        
-        [InlineCode("{this}.igEditor('text')")]
+
+        [InlineCode("{this}.igPercentEditor('text')")]
         public string Text()
         {
             return null;
         }
 
-        [InlineCode("{this}.igEditor('text', {val})")]
-        public new object Text(string val)
+        [InlineCode("{this}.igPercentEditor('text', {val})")]
+        public object Text(string val)
         {
             return null;
         }
 
-        [InlineCode("{this}.igEditor('text', {flag})")]
+        [InlineCode("{this}.igPercentEditor('text', {flag})")]
         public object Text(int flag)
         {
             return null;
         }
 
-        [InlineCode("{this}.igEditor('text', {val}, {flag})")]
+        [InlineCode("{this}.igPercentEditor('text', {val}, {flag})")]
         public object Text(string val, int flag)
         {
             return null;
         }
-        
-        [InlineCode("{this}.igEditor('validate')")]
+
+        [InlineCode("{this}.igPercentEditor('validate')")]
         public bool Validate()
         {
             return false;
         }
-        
-        [InlineCode("{this}.igEditor('validate', {noLabel})")]
+
+        [InlineCode("{this}.igPercentEditor('validate', {noLabel})")]
         public bool Validate(bool noLabel)
         {
             return false;
         }
-        
-        [InlineCode("{this}.igEditor('validator')")]
+
+        [InlineCode("{this}.igPercentEditor('validator')")]
         public bool Validator()
         {
             return false;
         }
 
-        [InlineCode("{this}.igEditor('value')")]
+        [InlineCode("{this}.igPercentEditor('value')")]
         public TypeOption<string, int, DateTime, object> Value()
         {
             return null;
         }
 
-        [InlineCode("{this}.igEditor('value', {val})")]
+        [InlineCode("{this}.igPercentEditor('value', {val})")]
         public TypeOption<string, int, DateTime, object> Value(object val)
         {
             return null;
@@ -341,241 +341,241 @@ namespace Ignite.UI.Widgets
         #endregion Methods
 
         #region Events
-        public new event jQueryUIEventHandler<IGEditorEvent> Blur
+        public event jQueryUIEventHandler<IGEditorEvent> Blur
         {
-            [InlineCode("{this}.bind('igeditorblur', {value})")]
+            [InlineCode("{this}.bind('igpercenteditorblur', {value})")]
             add
             {
             }
-            [InlineCode("{this}.unbind('igeditorblur', {value})")]
+            [InlineCode("{this}.unbind('igpercenteditorblur', {value})")]
             remove
             {
             }
         }
-        
+
         public event jQueryUIEventHandler<IGEditorEvent> ButtonClick
         {
-            [InlineCode("{this}.bind('igeditorbuttonclick', {value})")]
+            [InlineCode("{this}.bind('igpercenteditorbuttonclick', {value})")]
             add
             {
             }
-            [InlineCode("{this}.unbind('igeditorbuttonclick', {value})")]
+            [InlineCode("{this}.unbind('igpercenteditorbuttonclick', {value})")]
             remove
             {
             }
         }
-        
-        public new event jQueryUIEventHandler<IGEditorEvent> Focus
+
+        public event jQueryUIEventHandler<IGEditorEvent> Focus
         {
-            [InlineCode("{this}.bind('igeditorfocus', {value})")]
+            [InlineCode("{this}.bind('igpercenteditorfocus', {value})")]
             add
             {
             }
-            [InlineCode("{this}.unbind('igeditorfocus', {value})")]
+            [InlineCode("{this}.unbind('igpercenteditorfocus', {value})")]
             remove
             {
             }
         }
-        
+
         public event jQueryUICancelableEventHandler<IGEditorHideDropDownEvent> HideDropDown
         {
-            [InlineCode("{this}.bind('igeditorhidedropdown', {value})")]
+            [InlineCode("{this}.bind('igpercenteditorhidedropdown', {value})")]
             add
             {
             }
-            [InlineCode("{this}.unbind('igeditorhidedropdown', {value})")]
+            [InlineCode("{this}.unbind('igpercenteditorhidedropdown', {value})")]
             remove
             {
             }
         }
-        
+
         public event jQueryUIEventHandler<IGEditorInvalidValueEvent> InvalidValue
         {
-            [InlineCode("{this}.bind('igeditorinvalidvalue', {value})")]
+            [InlineCode("{this}.bind('igpercenteditorinvalidvalue', {value})")]
             add
             {
             }
-            [InlineCode("{this}.unbind('igeditorinvalidvalue', {value})")]
+            [InlineCode("{this}.unbind('igpercenteditorinvalidvalue', {value})")]
             remove
             {
             }
         }
-        
-        public new event jQueryUICancelableEventHandler<IGEditorKeyEvent> Keydown
+
+        public event jQueryUICancelableEventHandler<IGEditorKeyEvent> Keydown
         {
-            [InlineCode("{this}.bind('igeditorkeydown', {value})")]
+            [InlineCode("{this}.bind('igpercenteditorkeydown', {value})")]
             add
             {
             }
-            [InlineCode("{this}.unbind('igeditorkeydown', {value})")]
+            [InlineCode("{this}.unbind('igpercenteditorkeydown', {value})")]
             remove
             {
             }
         }
-        
-        public new event jQueryUICancelableEventHandler<IGEditorKeyEvent> Keypress
+
+        public event jQueryUICancelableEventHandler<IGEditorKeyEvent> Keypress
         {
-            [InlineCode("{this}.bind('igeditorkeypress', {value})")]
+            [InlineCode("{this}.bind('igpercenteditorkeypress', {value})")]
             add
             {
             }
-            [InlineCode("{this}.unbind('igeditorkeypress', {value})")]
+            [InlineCode("{this}.unbind('igpercenteditorkeypress', {value})")]
             remove
             {
             }
         }
-        
-        public new event jQueryUIEventHandler<IGEditorEvent> Keyup
+
+        public event jQueryUIEventHandler<IGEditorEvent> Keyup
         {
-            [InlineCode("{this}.bind('igeditorkeyup', {value})")]
+            [InlineCode("{this}.bind('igpercenteditorkeyup', {value})")]
             add
             {
             }
-            [InlineCode("{this}.unbind('igeditorkeyup', {value})")]
+            [InlineCode("{this}.unbind('igpercenteditorkeyup', {value})")]
             remove
             {
             }
         }
-        
+
         public event jQueryUIEventHandler<IGEditorListEvent> ListSelected
         {
-            [InlineCode("{this}.bind('igeditorlistselected', {value})")]
+            [InlineCode("{this}.bind('igpercenteditorlistselected', {value})")]
             add
             {
             }
-            [InlineCode("{this}.unbind('igeditorlistselected', {value})")]
+            [InlineCode("{this}.unbind('igpercenteditorlistselected', {value})")]
             remove
             {
             }
         }
-        
+
         public event jQueryUICancelableEventHandler<IGEditorListEvent> ListSelecting
         {
-            [InlineCode("{this}.bind('igeditorlistselecting', {value})")]
+            [InlineCode("{this}.bind('igpercenteditorlistselecting', {value})")]
             add
             {
             }
-            [InlineCode("{this}.unbind('igeditorlistselecting', {value})")]
+            [InlineCode("{this}.unbind('igpercenteditorlistselecting', {value})")]
             remove
             {
             }
         }
-        
+
         public event jQueryUIEventHandler<IGEditorMouseEvent> Mousedown
         {
-            [InlineCode("{this}.bind('igeditormousedown', {value})")]
+            [InlineCode("{this}.bind('igpercenteditormousedown', {value})")]
             add
             {
             }
-            [InlineCode("{this}.unbind('igeditormousedown', {value})")]
+            [InlineCode("{this}.unbind('igpercenteditormousedown', {value})")]
             remove
             {
             }
         }
-        
+
         public event jQueryUIEventHandler<IGEditorMouseEvent> Mouseleave
         {
-            [InlineCode("{this}.bind('igeditormouseleave', {value})")]
+            [InlineCode("{this}.bind('igpercenteditormouseleave', {value})")]
             add
             {
             }
-            [InlineCode("{this}.unbind('igeditormouseleave', {value})")]
+            [InlineCode("{this}.unbind('igpercenteditormouseleave', {value})")]
             remove
             {
             }
         }
-        
+
         public event jQueryUIEventHandler<IGEditorMouseEvent> Mousemove
         {
-            [InlineCode("{this}.bind('igeditormousemove', {value})")]
+            [InlineCode("{this}.bind('igpercenteditormousemove', {value})")]
             add
             {
             }
-            [InlineCode("{this}.unbind('igeditormousemove', {value})")]
+            [InlineCode("{this}.unbind('igpercenteditormousemove', {value})")]
             remove
             {
             }
         }
-        
+
         public event jQueryUIEventHandler<IGEditorMouseEvent> Mouseover
         {
-            [InlineCode("{this}.bind('igeditormouseover', {value})")]
+            [InlineCode("{this}.bind('igpercenteditormouseover', {value})")]
             add
             {
             }
-            [InlineCode("{this}.unbind('igeditormouseover', {value})")]
+            [InlineCode("{this}.unbind('igpercenteditormouseover', {value})")]
             remove
             {
             }
         }
-        
+
         public event jQueryUIEventHandler<IGEditorMouseEvent> Mouseup
         {
-            [InlineCode("{this}.bind('igeditormouseup', {value})")]
+            [InlineCode("{this}.bind('igpercenteditormouseup', {value})")]
             add
             {
             }
-            [InlineCode("{this}.unbind('igeditormouseup', {value})")]
+            [InlineCode("{this}.unbind('igpercenteditormouseup', {value})")]
             remove
             {
             }
         }
-        
+
         public event jQueryUICancelableEventHandler<IGEditorEvent> ShowDropDown
         {
-            [InlineCode("{this}.bind('igeditorshowdropdown', {value})")]
+            [InlineCode("{this}.bind('igpercenteditorshowdropdown', {value})")]
             add
             {
             }
-            [InlineCode("{this}.unbind('igeditorshowdropdown', {value})")]
+            [InlineCode("{this}.unbind('igpercenteditorshowdropdown', {value})")]
             remove
             {
             }
         }
-        
+
         public event jQueryUICancelableEventHandler<IGEditorSpinEvent> SpinEvent
         {
-            [InlineCode("{this}.bind('igeditorspin', {value})")]
+            [InlineCode("{this}.bind('igpercenteditorspin', {value})")]
             add
             {
             }
-            [InlineCode("{this}.unbind('igeditorspin', {value})")]
+            [InlineCode("{this}.unbind('igpercenteditorspin', {value})")]
             remove
             {
             }
         }
-        
+
         public event jQueryUIEventHandler<IGEditorChangeEvent> TextChanged
         {
-            [InlineCode("{this}.bind('igeditortextchanged', {value})")]
+            [InlineCode("{this}.bind('igpercenteditortextchanged', {value})")]
             add
             {
             }
-            [InlineCode("{this}.unbind('igeditortextchanged', {value})")]
+            [InlineCode("{this}.unbind('igpercenteditortextchanged', {value})")]
             remove
             {
             }
         }
-        
+
         public event jQueryUIEventHandler<IGEditorChangeEvent> ValueChanged
         {
-            [InlineCode("{this}.bind('igeditorvaluechanged', {value})")]
+            [InlineCode("{this}.bind('igpercenteditorvaluechanged', {value})")]
             add
             {
             }
-            [InlineCode("{this}.unbind('igeditorvaluechanged', {value})")]
+            [InlineCode("{this}.unbind('igpercenteditorvaluechanged', {value})")]
             remove
             {
             }
         }
-        
+
         public event jQueryUICancelableEventHandler<IGEditorChangeEvent> ValueChanging
         {
-            [InlineCode("{this}.bind('igeditorvaluechanging', {value})")]
+            [InlineCode("{this}.bind('igpercenteditorvaluechanging', {value})")]
             add
             {
             }
-            [InlineCode("{this}.unbind('igeditorvaluechanging', {value})")]
+            [InlineCode("{this}.unbind('igpercenteditorvaluechanging', {value})")]
             remove
             {
             }

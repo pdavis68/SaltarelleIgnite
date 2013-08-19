@@ -32,6 +32,13 @@ namespace Ignite.UI.Widgets
             return null;
         }
 
+        [InstanceMethodOnFirstArgument, ScriptName("igDatePicker")]
+        public static IGDatePickerObject IGDatePicker(this jQueryObject q, IGDatePickerOptions options)
+        {
+            return null;
+        }
+
+
         [InstanceMethodOnFirstArgument, ScriptName("igCombo")]
         public static IGComboObject IGCombo(this jQueryObject q)
         {
@@ -100,6 +107,18 @@ namespace Ignite.UI.Widgets
 
         [InstanceMethodOnFirstArgument, ScriptName("ig.loader")]
         public static IGLoaderObject IGLoader(this jQueryObject q, IGLoaderOptions options)
+        {
+            return null;
+        }
+
+        [InstanceMethodOnFirstArgument, ScriptName("igEditor")]
+        public static IGEditorObject IGEditor(this jQueryObject q)
+        {
+            return null;
+        }
+
+        [InstanceMethodOnFirstArgument, ScriptName("igEditor")]
+        public static IGEditorObject IGEditor(this jQueryObject q, IGEditorOptions options)
         {
             return null;
         }
