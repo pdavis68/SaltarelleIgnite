@@ -66,7 +66,6 @@ namespace Ignite.UI.Widgets
         public bool ShowHeader { get; set; }
         public int TabIndex { get; set; }
         public string UpdateUrl { get; set; }
-        
         public bool Virtualization { get; set; }
         public string VirtualizationMode { get; set; }
         public int VirtualizationMouseWheelStep { get; set; }
@@ -325,7 +324,7 @@ namespace Ignite.UI.Widgets
     [Serializable]
     public class IGGridEvent
     {
-        public object Owner;
+        public dynamic Owner;
     }
 
     [IgnoreNamespace, Imported]
@@ -370,6 +369,15 @@ namespace Ignite.UI.Widgets
 
     [IgnoreNamespace, Imported]
     [Serializable]
+    public class IGGridActiveRowItem
+    {
+        public TableRowElement[] Element { get; set; }
+        public int Id { get; set; }
+        public int Index { get; set; }
+    }
+
+    [IgnoreNamespace, Imported]
+    [Serializable]
     public class IGGridResizingFeature : IGGridFeatureBase
     {
         public bool AllowDoubleClickToResize { get; set; }
@@ -399,64 +407,39 @@ namespace Ignite.UI.Widgets
     public class IGGridSortingFeature : IGGridFeatureBase
     {
         public bool ApplySortedColumnCss { get; set; }
-
         public bool CaseSensitive { get; set; }
-
         public IGGridSortingColumnSettings[] ColumnSettings { get; set; }
-
         public Delegate CustomSortFunction { get; set; }
-
         public string FeatureChooserText { get; set; }
-
         /// <summary>
         /// Valid values: "ascending" and "descending"
         /// </summary>
         public string FirstSortDirection { get; set; }
-
         public int ModalDialogAnimationDuration { get; set; }
-
         public string ModalDialogButtonApplyText { get; set; }
-
         public string ModalDialogButtonCancelText { get; set; }
-
         public string ModalDialogCaptionButtonAsc { get; set; }
-
         public string ModalDialogCaptionButtonDesc { get; set; }
-
         public string ModalDialogCaptionButtonUnsort { get; set; }
-
         public string ModalDialogCaptionText { get; set; }
-
         public int ModalDialogHeight { get; set; }
-
         public string ModalDialogResetButtonLabel { get; set; }
-
         public string ModalDialogResetButtonText { get; set; }
-
         public bool ModalDialogSortOnClick { get; set; }
-
         public int ModalDialogWidth { get; set; }
-
         /// <summary>
         /// Valid values: "single" and "multi"
         /// </summary>
         public string Mode { get; set; }
-
         public string SortedColumnTooltip { get; set; }
-
         public string SortUrlKey { get; set; }
-
         public string SortUrlKeyAscValue { get; set; }
-
         public string SortUrlKeyDescValue { get; set; }
-
         /// <summary>
         /// Valid values: "remote" and "local"
         /// </summary>
         public string Type { get; set; }
-
         public string UnsortedColumnTooltip { get; set; }
-
     }
 
     [IgnoreNamespace, Imported]
@@ -498,7 +481,19 @@ namespace Ignite.UI.Widgets
         public bool EnableAddRow { get; set; }
         public bool EnableDataDirtyException { get; set; }
         public bool EnableDeleteRow { get; set; }
+        public bool ExcelNavigationMode { get; set; }
+        public bool HorizontalMoveOnEnter { get; set; }
+        public object Labels { get; set; }
+        public string RowEditDialogContainment { get; set; }
+        public TypeOption<string, int> RowEditDialogContentHeight { get; set; }
+        public int RowEditDialogFieldWidth { get; set; }
+        public TypeOption<string, int> RowEditDialogHeight { get; set; }
+        public TypeOption<string, int> RowEditDialogOkCancelButtonWidth { get; set; }
+        public string RowEditDialogRowTemplate { get; set; }
+        public string RowEditDialogRowTemplateID { get; set; }
+        public TypeOption<string, int> RowEditDialogWidth { get; set; }
         public bool ShowDoneCancelButtons { get; set; }
+        public bool ShowReadonlyEditors { get; set; }
         public string StartEditTriggers { get; set; }
         public bool Validation { get; set; }
         #endregion options

@@ -296,10 +296,28 @@ namespace Ignite.UI.Widgets
         {
             return null;
         }
-        
+
+        [InlineCode("{this}.options")]
+        public IGGridOptions Options()
+        {
+            return null;
+        }
+
         #endregion Methods
 
         #region Events
+        public event jQueryUIEventHandler<IGGridEvent> Created
+        {
+            [InlineCode("{this}.bind('iggridcreated', {value})")]
+            add
+            {
+            }
+            [InlineCode("{this}.unbind('iggridcreated', {value})")]
+            remove
+            {
+            }
+        }
+
         public event jQueryUIEventHandler<IGGridEvent> DataRendered
         {
             [InlineCode("{this}.bind('iggriddatarendered', {value})")]
@@ -731,6 +749,12 @@ namespace Ignite.UI.Widgets
             return null;
         }
 
+        [InlineCode("{this}.igGridUpdating('option', 'enableAddRow', {yesno})")]
+        public void EnableAddRow(bool yesno)
+        {
+
+        }
+
         [InlineCode("{this}.igGridUpdating('option', 'enableDeleteRow', {yesno})")]
         public void EnableDeleteRow(bool yesno)
         {
@@ -761,10 +785,34 @@ namespace Ignite.UI.Widgets
 
         }
 
+        [InlineCode("{this}.igGridUpdating('hideColumn', {colIndex})")]
+        public void HideColumn(int colIndex)
+        {
+
+        }
+
+        [InlineCode("{this}.igGridUpdating('hideColumn', {colKey})")]
+        public void HideColumn(string colKey)
+        {
+
+        }
+
+        [InlineCode("{this}.igGridUpdating('hideColumnChooser')")]
+        public void HideColumnChooser()
+        {
+
+        }
+
         [InlineCode("{this}.igGridUpdating('isEditing')")]
         public bool IsEditing()
         {
             return false;
+        }
+
+        [InlineCode("{this}.igGridUpdating('removeColumnChooserResetButton')")]
+        public void RemoveColumnChooserResetButton()
+        {
+
         }
 
         [InlineCode("{this}.igGridUpdating('setCellValue', {rowId}, {colKey}, {value})")]
@@ -775,6 +823,24 @@ namespace Ignite.UI.Widgets
 
         [InlineCode("{this}.igGridUpdating('setCellValue', {rowId}, {colKey}, {value}, {tr})")]
         public void SetCellValue(object rowId, string colKey, object value, object tr)
+        {
+
+        }
+
+        [InlineCode("{this}.igGridUpdating('showColumn', {colIndex})")]
+        public void ShowColumn(int colIndex)
+        {
+
+        }
+
+        [InlineCode("{this}.igGridUpdating('showColumn', {colKey})")]
+        public void ShowColumn(string colKey)
+        {
+
+        }
+
+        [InlineCode("{this}.igGridUpdating('showColumnChooser')")]
+        public void ShowColumnChooser()
         {
 
         }
@@ -988,54 +1054,38 @@ namespace Ignite.UI.Widgets
         #endregion Events
         #endregion igGridUpdating
 
-        #region igGridHiding
-
+        #region igGridPaging
         #region Methods
-        [InlineCode("{this}.igGridUpdating('hideColumn', {colIndex})")]
-        public void HideColumn(int colIndex)
+        [InlineCode("{this}.igGridPaging('destroy')")]
+        public void DestroyPaging()
         {
 
         }
 
-        [InlineCode("{this}.igGridUpdating('hideColumn', {colKey})")]
-        public void HideColumn(string colKey)
+        [InlineCode("{this}.igGridPaging('pageIndex')")]
+        public int PageIndex()
         {
-
+            return 0;
         }
 
-        [InlineCode("{this}.igGridUpdating('hideColumnChooser')")]
-        public void HideColumnChooser()
+        [InlineCode("{this}.igGridPaging('pageIndex', {index})")]
+        public int PageIndex(int index)
         {
-
+            return 0;
         }
 
-        [InlineCode("{this}.igGridUpdating('removeColumnChooserResetButton')")]
-        public void RemoveColumnChooserResetButton()
+        [InlineCode("{this}.igGridPaging('pageSize')")]
+        public int PageSize()
         {
-
+            return 0;
         }
 
-        [InlineCode("{this}.igGridUpdating('showColumn', {colIndex})")]
-        public void ShowColumn(int colIndex)
+        [InlineCode("{this}.igGridPaging('pageSize', {size})")]
+        public int PageSize(int size)
         {
-
+            return 0;
         }
-
-        [InlineCode("{this}.igGridUpdating('showColumn', {colKey})")]
-        public void ShowColumn(string colKey)
-        {
-
-        }
-
-        [InlineCode("{this}.igGridUpdating('showColumnChooser')")]
-        public void ShowColumnChooser()
-        {
-
-        }
-
         #endregion
-
-
         #endregion
     }
 }

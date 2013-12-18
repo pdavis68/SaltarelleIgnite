@@ -16,6 +16,7 @@
 
 using jQueryApi;
 using jQueryApi.UI;
+using System.Html;
 using System.Runtime.CompilerServices;
 
 namespace Ignite.UI.Widgets
@@ -37,7 +38,7 @@ namespace Ignite.UI.Widgets
         }
 
         [InlineCode("{this}.igTree('children', {parent})")]
-        public object Children(object parent)
+        public Element[] Children(Element parent)
         {
             return null;
         }

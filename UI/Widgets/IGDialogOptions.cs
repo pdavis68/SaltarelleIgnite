@@ -45,7 +45,7 @@ namespace Ignite.UI.Widgets
 
         public string HeaderText { get; set; }
 
-        public int Height { get; set; }
+        public TypeOption<int, string> Height { get; set; }
 
         public string ImageClass { get; set; }
 
@@ -101,7 +101,7 @@ namespace Ignite.UI.Widgets
 
         public string UnpinButtonTitle { get; set; }
 
-        public int Width { get; set; }
+        public TypeOption<int, string> Width { get; set; }
 
         public int ZIndex { get; set; }
         #endregion Options

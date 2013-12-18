@@ -213,12 +213,12 @@ namespace Ignite.UI.Widgets
     {
         public String Path;
         public IGNodeData Data;
+        public Element Element;
     }
 
     [IgnoreNamespace, Serializable]
     public class IGNodeData
     {
-        
     }
 
     [IgnoreNamespace, Imported]
@@ -312,8 +312,8 @@ namespace Ignite.UI.Widgets
     public class IGTreeSelectionChanged
     {
         public jQueryObject Owner { get; set; }
-        public jQueryObject SelectedNodes { get; set; }
-        public jQueryObject NewNodes { get; set; }
+        public IGNode[] SelectedNodes { get; set; }
+        public IGNode[] NewNodes { get; set; }
     }
 
     [IgnoreNamespace, Imported]
@@ -321,7 +321,7 @@ namespace Ignite.UI.Widgets
     public class IGTreeSelectionChanging
     {
         public jQueryObject Owner { get; set; }
-        public jQueryObject SelectedNodes { get; set; }
-        public jQueryObject NewNodes { get; set; }
+        public IGNode[] SelectedNodes { get; set; }
+        public IGNode[] NewNodes { get; set; }
     }
 }

@@ -32,7 +32,7 @@ namespace Ignite.UI.Widgets
         public bool CheckboxesName;
         public Element Element;
         public bool EnableTargetErrorCss;
-        public Element ErrorLabel;
+        public TypeOption<string, Element> ErrorLabel;
         public string ErrorMessage;
         public bool FormSubmit;
         public TypeOption<string, int> KeepFocus;
@@ -64,7 +64,7 @@ namespace Ignite.UI.Widgets
     public class IGValidatorCheckValue
     {
         public string Message { get; set; }
-        public object Value { get; set; }
+        public TypeOption<int, decimal, string, object> Value { get; set; }
     }
 
     [IgnoreNamespace, Imported]
